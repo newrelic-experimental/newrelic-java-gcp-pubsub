@@ -1,41 +1,38 @@
 [![New Relic Experimental header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Experimental.png)](https://opensource.newrelic.com/oss-category/#new-relic-experimental)
 
-# [Project Name - use format "newrelic-java-<name>"] [build badges go here when available]
+# New Relic Java Instrumentation for Google Cloud Platform PubSub
 
->[Brief description - what is the project and value does it provide? How often should users expect to get releases? How is versioning set up? Where does this project want to go?]
-
+Instrumentation for the Google Cloud Platform PubSub framework (https://cloud.google.com/pubsub).  
 ## Installation
 
-> [Include a step-by-step procedure on how to get your code installed. Be sure to include any third-party dependencies that need to be installed separately]
+To install:
 
+1. Download the latest release jar files.   
+2. In the New Relic Java directory (the one containing newrelic.jar), create a directory named extensions if it does not already exist.
+3. Copy the downloaded jars into the extensions directory.
+4. Restart the application.
 ## Getting Started
 
->[Simple steps to start working with the software similar to a "Hello World"]
-
-## Usage
-
->[**Optional** - Include more thorough instructions on how to use the software. This section might not be needed if the Getting Started section is enough. Remove this section if it's not needed.]
+Once installed, the instrumentation will monitor both the publish and the subscribe of messages sent via the PubSub framework.  In addition, the instrumentation will take care of distributed tracing so that the publish will provide the distributed tracing headers on the message and the subscribe will read the headers and process them appropriately.
 
 ## Building
 
->[**Optional** - Include this section if users will need to follow specific instructions to build the software from source. Be sure to include any third party build dependencies that need to be installed separately. Remove this section if it's not needed.]
-
-## Testing
-
->[**Optional** - Include instructions on how to run tests if we include tests with the codebase. Remove this section if it's not needed.]
+Building the extension requires that Gradle is installed.
+To build the extension jars from source, follow these steps:
+### Build single extension
+To build a single extension with name *extension*, do the following:
+1. Set an environment variable *NEW_RELIC_EXTENSIONS_DIR* and set its value to the directory where you want the jar file built.
+2. Run the command: gradlew *extension*:clean *extension*:install
+### Build all extensions
+To build all extensions, do the following:
+1. Set an environment variable *NEW_RELIC_EXTENSIONS_DIR* and set its value to the directory where you want the jar file built.
+2. Run the command: gradlew clean install
 
 ## Support
 
 New Relic has open-sourced this project. This project is provided AS-IS WITHOUT WARRANTY OR DEDICATED SUPPORT. Issues and contributions should be reported to the project here on GitHub.
 
->[Choose 1 of the 2 options below for Support details, and remove the other one.]
-
->[Option 1 - no specific thread in Community]
 >We encourage you to bring your experiences and questions to the [Explorers Hub](https://discuss.newrelic.com) where our community members collaborate on solutions and new ideas.
-
->[Option 2 - thread in Community]
->New Relic hosts and moderates an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub.
->You can find this project's topic/threads here: [URL for Community thread]
 
 ## Contributing
 
