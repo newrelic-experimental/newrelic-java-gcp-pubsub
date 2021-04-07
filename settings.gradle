@@ -8,3 +8,4 @@ git {
     }
 }
 rootProject.name = 'java-instrumentation-template'
+include 'gcp-pubsub'
