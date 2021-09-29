@@ -1,2 +1,3 @@
 rootProject.name = 'java-instrumentation-template'
 include 'gcp-pubsub'
+include 'gcp-pubsub-1.114.1'
