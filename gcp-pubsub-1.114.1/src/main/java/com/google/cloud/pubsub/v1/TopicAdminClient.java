@@ -16,7 +16,7 @@ import com.nr.fit.instrumentation.gcp.pubsub.Utils;
 public abstract class TopicAdminClient {
 
 	@Trace(dispatcher=true)
-	PublishResponse publish(PublishRequest request) {
+	public PublishResponse publish(PublishRequest request) {
 		String topicName = request.getTopic();
 		HashMap<String, Object> attributes = new HashMap<String, Object>();
 		attributes.put("Topic", topicName);
