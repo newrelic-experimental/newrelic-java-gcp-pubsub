@@ -1,4 +1,20 @@
-[![New Relic Experimental header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Experimental.png)](https://opensource.newrelic.com/oss-category/#new-relic-experimental)
+[![New Relic Experimental header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Experimental.png)](https://opensource.newrelic.com/oss-category/#new-relic-experimental)  
+    
+![GitHub forks](https://img.shields.io/github/forks/newrelic-experimental/newrelic-java-gcp-pubsub?style=social)
+![GitHub stars](https://img.shields.io/github/stars/newrelic-experimental/newrelic-java-gcp-pubsub?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/newrelic-experimental/newrelic-java-gcp-pubsub?style=social)
+
+![GitHub all releases](https://img.shields.io/github/downloads/newrelic-experimental/newrelic-java-gcp-pubsub/total)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/newrelic-experimental/newrelic-java-gcp-pubsub)
+![GitHub last commit](https://img.shields.io/github/last-commit/newrelic-experimental/newrelic-java-gcp-pubsub)
+![GitHub Release Date](https://img.shields.io/github/release-date/newrelic-experimental/newrelic-java-gcp-pubsub)
+
+
+![GitHub issues](https://img.shields.io/github/issues/newrelic-experimental/newrelic-java-gcp-pubsub)
+![GitHub issues closed](https://img.shields.io/github/issues-closed/newrelic-experimental/newrelic-java-gcp-pubsub)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/newrelic-experimental/newrelic-java-gcp-pubsub)
+![GitHub pull requests closed](https://img.shields.io/github/issues-pr-closed/newrelic-experimental/newrelic-java-gcp-pubsub)   
+
 
 # New Relic Java Instrumentation for Google Cloud Platform PubSub
 
