@@ -7,9 +7,9 @@ dependencies {
   implementation 'com.google.cloud:google-cloud-pubsub:1.84.0'
 
    // New Relic Labs Java Agent dependencies
-   implementation 'com.newrelic.agent.java:newrelic-agent:6.4.0'
-   implementation 'com.newrelic.agent.java:newrelic-api:6.4.0'
-   implementation fileTree(include: ['*.jar'], dir: '../libs')
+   implementation 'com.newrelic.agent.java:newrelic-agent:' + project.findProperty('java.agent.version')
+   implementation 'com.newrelic.agent.java:newrelic-api:' + project.findProperty('java.agent.version')
+   implementation 'com.newrelic.agent.java:agent-bridge:' + project.findProperty('java.agent.version')
    implementation fileTree(include: ['*.jar'], dir: '../test-lib')
 }
 
@@ -23,5 +23,5 @@ jar {
 }
 
 verifyInstrumentation {
-  passes 'com.google.cloud:google-cloud-pubsub:[1.84.0,1.114.1)'
+  passesOnly 'com.google.cloud:google-cloud-pubsub:[1.67.0,1.114.1)'
 }
